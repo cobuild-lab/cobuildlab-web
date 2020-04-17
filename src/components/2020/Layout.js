@@ -53,11 +53,13 @@ const Layout = ({ children }) => {
 
   return (
     <Container>
+      {/*<NewsletterModal />*/}
       <Wrapper>{children}</Wrapper>
       <Footer />
     </Container>
   );
 };
+
 
 Layout.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
@@ -65,4 +67,3 @@ Layout.propTypes = {
 
 export default Layout;
 
-// <NewsletterModal />;
