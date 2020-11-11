@@ -1,49 +1,50 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import SeoMetaTags from '../components/SeoMetaTags';
-import Navbar from '../components/enterprise/containers/navbar';
-import Banner from '../components/enterprise-logistics/containers/banner';
-import IncubatorLink from '../components/enterprise/containers/incubator/Incubator';
-import Service from '../components/enterprise-logistics/containers/service';
-import About from '../components/enterprise/containers/about';
-import UniqueValueProps from '../components/enterprise/containers/unique-value-props';
-import Video from '../components/enterprise/containers/video';
-import Skills from '../components/enterprise/containers/skills';
-import OurTeamEnterpriseSection from '../components/enterprise/containers/OurTeamEnterpriseSection';
-import Project from '../components/enterprise/containers/project';
-import EnterpriseCustomerSuccessStories from '../components/enterprise/containers/EnterpriseCustomerSuccessStories';
-import Testimonial from '../components/enterprise/containers/testimonial/Testimonial';
-import Contact from '../components/enterprise/containers/contact/ContactEnterprise';
-import Brand from '../components/enterprise/containers/brands';
-import Footer from '../components/enterprise/containers/footer/Footer';
-import EnterpriseRecentPost from '../components/enterprise/containers/EnterpriseRecentPost';
-
 import 'bulma';
 import 'slick-carousel/slick/slick.scss';
 import 'slick-carousel/slick/slick-theme.scss';
 import 'react-toastify/dist/ReactToastify.min.css';
 import '../assets/scss/index.scss';
+import Header from './2021/theme/landing/header';
+import GiftSection from './2021/theme/landing/git-section';
+import DemoSection from './2021/theme/landing/demo';
+import PortfolioSection from './2021/theme/landing/portfolio';
+import WhatinsideSection from './2021/theme/landing/whatinside';
+import BlogSection from './2021/theme/landing/blog';
+import ElementSection from './2021/theme/landing/elements';
+import FeaturesSection from './2021/theme/landing/features';
+import TestimonialSection from './2021/theme/landing/testimonial';
+import RatSection from './2021/theme/landing/rat';
+import FooterSection from './2021/theme/landing/footer';
 
 const IndexPage = () => (
   <div className="main-wrapper">
     <SeoMetaTags />
-    <Navbar />
-    <div id="main-content">
-      <Banner />
-      <Service />
-      <IncubatorLink />
-      <About />
-      <UniqueValueProps />
-      <Video />
-      <Skills />
-      <Project />
-      <EnterpriseCustomerSuccessStories />
-      <Testimonial />
-      <OurTeamEnterpriseSection />
-      <Contact />
-      <EnterpriseRecentPost />
-      <Brand />
-      <Footer />
-    </div>
+    <Fragment>
+      <div className="landing-page">
+        <Header />
+
+        <GiftSection />
+
+        <DemoSection />
+
+        <PortfolioSection />
+
+        <WhatinsideSection />
+
+        <BlogSection />
+
+        <ElementSection />
+
+        <FeaturesSection />
+
+        <TestimonialSection />
+
+        <RatSection />
+
+        <FooterSection />
+      </div>
+    </Fragment>
   </div>
 );
 
