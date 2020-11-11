@@ -47,6 +47,7 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-icons-kit": "^1.3.1",
+    "react-image-lightbox-next": "^4.3.0",
     "react-light-accordion": "^0.1.4",
     "react-masonry-css": "^1.0.14",
     "react-modal-video": "^1.2.2",
